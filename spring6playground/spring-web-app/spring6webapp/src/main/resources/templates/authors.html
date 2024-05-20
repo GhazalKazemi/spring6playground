@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Authors - Spring 6 MVC</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Books</th>
+    </tr>
+    <tr th:each="author : ${authors}">
+        <td th:text="${author.id}">#123</td>
+        <td th:text="${author.firstName} + ${author.lastName}">An author name</td>
+        <td th:each="book : ${author.books}">
+            <p th:text="${book.title}">An author's books</p>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
