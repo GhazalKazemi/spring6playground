@@ -21,6 +21,10 @@ public class Book {
     @ManyToOne
     private Publisher publisher;
 
+    public Long getId() {
+        return id;
+    }
+
     public String getTitle() {
         return title;
     }
