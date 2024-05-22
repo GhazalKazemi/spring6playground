@@ -1,1 +1,1 @@
-Spring Web | Data JPA | H2
+Spring 6 | Boot 3 | Java 17
